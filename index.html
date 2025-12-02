@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Text Summarizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ✅ NAVBAR -->
+  <div class="navbar">
+    <div class="nav-left">
+      <img src="C:\Users\PrakashShanmugan\Desktop\self learning project\ai_text_summarizer\viyona_fintech_logo.png" alt="Logo" class="nav-logo">
+    </div>
+
+    <div class="nav-center">AI TEXT SUMMARIZER</div>
+
+    <div class="nav-right">
+      <button id="clearBtn" class="clear-btn">Clear</button>
+      <button id="downloadBtn" class="download-btn" disabled>Download</button>
+    </div>
+  </div>
+
+  <!-- ✅ APP AREA -->
+  <div id="app">
+
+    <!-- ✅ CHAT OUTPUT -->
+    <div id="chat-container"></div>
+
+    <!-- ✅ INPUT BAR -->
+    <div class="input-bar">
+
+      <!-- Upload -->
+      <label class="upload-btn">
+        📎
+        <input type="file" id="fileInput" hidden>
+      </label>
+
+      <textarea
+        id="inputText"
+        placeholder="Paste your text or upload a document for summary..."
+      ></textarea>
+
+      <button id="sendBtn">➤</button>
+    </div>
+  </div>
+
+  <!-- ✅ Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+  <script src="https://unpkg.com/mammoth/mammoth.browser.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
